@@ -14,4 +14,5 @@ Pod::Spec.new do |s|
 	#s.resources = 'Sources/**/*{lproj,xcdatamodeld,storyboard,xib,xcassets,json,strings}'
     s.source_files = "Sources/**/*.swift"
     s.dependency 'Sovran'
+    s.dependency 'JSONSafeEncoding'
 end
