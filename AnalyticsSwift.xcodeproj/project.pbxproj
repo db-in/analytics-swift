@@ -23,6 +23,8 @@
 /* Begin PBXFileReference section */
 		60FDCDB62E4E257A00288C2C /* pod_pipeline.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = pod_pipeline.sh; sourceTree = "<group>"; };
 		60FDCDB82E4E259300288C2C /* AnalyticsSwift.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = AnalyticsSwift.podspec; sourceTree = "<group>"; };
+		60FDCDB92E4E4A3D00288C2C /* JSONSafeEncoding.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = JSONSafeEncoding.podspec; sourceTree = "<group>"; };
+		60FDCDBA2E4E4A3D00288C2C /* Sovran.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Sovran.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -30,6 +32,8 @@
 			isa = PBXGroup;
 			children = (
 				60FDCDB82E4E259300288C2C /* AnalyticsSwift.podspec */,
+				60FDCDB92E4E4A3D00288C2C /* JSONSafeEncoding.podspec */,
+				60FDCDBA2E4E4A3D00288C2C /* Sovran.podspec */,
 				60FDCDB72E4E257A00288C2C /* Scripts */,
 			);
 			sourceTree = "<group>";

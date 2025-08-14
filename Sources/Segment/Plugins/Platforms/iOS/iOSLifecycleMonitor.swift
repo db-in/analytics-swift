@@ -41,15 +41,15 @@ class iOSLifecycleMonitor: PlatformPlugin {
     weak var analytics: Analytics?
     
     private var application: UIApplication? = nil
-    private var appNotifications: [NSNotification.Name] = [UIApplication.didEnterBackgroundNotification,
-                                                           UIApplication.willEnterForegroundNotification,
-                                                           UIApplication.didFinishLaunchingNotification,
-                                                           UIApplication.didBecomeActiveNotification,
-                                                           UIApplication.willResignActiveNotification,
-                                                           UIApplication.didReceiveMemoryWarningNotification,
-                                                           UIApplication.willTerminateNotification,
-                                                           UIApplication.significantTimeChangeNotification,
-                                                           UIApplication.backgroundRefreshStatusDidChangeNotification]
+    private var appNotifications: [NSNotification.Name] = [NSNotification.Name.UIApplicationDidEnterBackground,
+                                                           NSNotification.Name.UIApplicationWillEnterForeground,
+                                                           NSNotification.Name.UIApplicationDidFinishLaunching,
+                                                           NSNotification.Name.UIApplicationDidBecomeActive,
+                                                           NSNotification.Name.UIApplicationWillResignActive,
+                                                           NSNotification.Name.UIApplicationDidReceiveMemoryWarning,
+                                                           NSNotification.Name.UIApplicationWillTerminate,
+                                                           NSNotification.Name.UIApplicationSignificantTimeChange,
+                                                           NSNotification.Name.UIApplicationBackgroundRefreshStatusDidChange]
 
     required init() {
         // App extensions can't use UIAppication.shared, so
@@ -61,23 +61,23 @@ class iOSLifecycleMonitor: PlatformPlugin {
     @objc
     func notificationResponse(notification: NSNotification) {        
         switch (notification.name) {
-        case UIApplication.didEnterBackgroundNotification:
+        case NSNotification.Name.UIApplicationDidEnterBackground:
             self.didEnterBackground(notification: notification)
-        case UIApplication.willEnterForegroundNotification:
+        case NSNotification.Name.UIApplicationWillEnterForeground:
             self.applicationWillEnterForeground(notification: notification)
-        case UIApplication.didFinishLaunchingNotification:
+        case NSNotification.Name.UIApplicationDidFinishLaunching:
             self.didFinishLaunching(notification: notification)
-        case UIApplication.didBecomeActiveNotification:
+        case NSNotification.Name.UIApplicationDidBecomeActive:
             self.didBecomeActive(notification: notification)
-        case UIApplication.willResignActiveNotification:
+        case NSNotification.Name.UIApplicationWillResignActive:
             self.willResignActive(notification: notification)
-        case UIApplication.didReceiveMemoryWarningNotification:
+        case NSNotification.Name.UIApplicationDidReceiveMemoryWarning:
             self.didReceiveMemoryWarning(notification: notification)
-        case UIApplication.significantTimeChangeNotification:
+        case NSNotification.Name.UIApplicationSignificantTimeChange:
             self.significantTimeChange(notification: notification)
-        case UIApplication.backgroundRefreshStatusDidChangeNotification:
+        case NSNotification.Name.UIApplicationBackgroundRefreshStatusDidChange:
             self.backgroundRefreshDidChange(notification: notification)
-        case UIApplication.willTerminateNotification:
+        case NSNotification.Name.UIApplicationWillTerminate:
             self.willTerminate(notification: notification)
         default:
             
@@ -194,7 +194,7 @@ extension SegmentDestination.UploadTaskInfo {
         self.task = task
         
         if let application = UIApplication.safeShared {
-            var taskIdentifier: UIBackgroundTaskIdentifier = .invalid
+            var taskIdentifier: UIBackgroundTaskIdentifier = UIBackgroundTaskIdentifier.invalid
             taskIdentifier = application.beginBackgroundTask {
                 task.cancel()
                 application.endBackgroundTask(taskIdentifier)
