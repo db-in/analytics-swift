@@ -102,8 +102,6 @@
 		602FA09E29D8709D00924BDC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H5QKC5ZBYV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -111,8 +109,6 @@
 		602FA09F29D8709D00924BDC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H5QKC5ZBYV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

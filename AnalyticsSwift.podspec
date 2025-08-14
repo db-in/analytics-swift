@@ -8,8 +8,8 @@ Pod::Spec.new do |s|
 	s.source = { :git => 'https://github.com/db-in/analytics-swift.git', :tag => s.version, :submodules => true }
     s.ios.deployment_target = "15.0"
     s.requires_arc = true
-	#s.user_target_xcconfig = { 'GENERATE_INFOPLIST_FILE' => 'YES' }
-	#s.pod_target_xcconfig = { 'GENERATE_INFOPLIST_FILE' => 'YES' }
+	s.user_target_xcconfig = { 'GENERATE_INFOPLIST_FILE' => 'YES' }
+	s.pod_target_xcconfig = { 'GENERATE_INFOPLIST_FILE' => 'YES' }
     s.source_files = 'Sources/**/*.{h,m,swift}'
 	#s.resources = 'Sources/**/*{lproj,xcdatamodeld,storyboard,xib,xcassets,json,strings}'
     s.source_files = "Sources/**/*.swift"
