@@ -8,7 +8,7 @@
 #if !os(Linux) && !os(Windows)
 
 import Foundation
-import JSONSafeEncoding_Swift
+import JSONSafeEncodingSwift
 
 // MARK: - ObjC Compatibility
 

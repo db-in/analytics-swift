@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import Sovran_Swift
+import SovranSwift
 
 
 public class IntervalBasedFlushPolicy: FlushPolicy,

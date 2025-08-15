@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import Sovran_Swift
+import SovranSwift
 
 #if os(Linux) || os(Windows)
 // Whoever is doing swift/linux/Windows development over there

@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import JSONSafeEncoding_Swift
+import JSONSafeEncodingSwift
 
 extension JSONDecoder {
     enum JSONDecodingError: Error {

@@ -1,14 +1,14 @@
 Pod::Spec.new do |s|
-    s.name = "JSONSafeEncoding-Swift"
-    s.version = "2.0.0"
-    s.summary = "A Swift JSON encoding library that handles edge cases safely"
+    s.name = "SovranSwift"
+    s.version = "1.1.1"
+    s.summary = "A Swift state management library"
     s.description = <<-DESC
-                     JSONSafeEncoding provides safe JSON encoding for Swift applications, handling edge cases that the standard JSONEncoder might not handle gracefully.
+                     Sovran is a Swift state management library that provides a simple and efficient way to manage state in your Swift applications.
                      DESC
     s.homepage = "https://github.com/db-in/analytics-swift"
     s.license = "MIT"
     s.authors = "Segment, Inc."
-    s.source = { :git => 'https://github.com/db-in/analytics-swift.git', :tag => "jsonsafeencoding-#{s.version}", :submodules => true }
+    s.source = { :git => 'https://github.com/db-in/analytics-swift.git', :tag => "sovran-#{s.version}", :submodules => true }
 	s.ios.deployment_target = "15.0"
     s.tvos.deployment_target = "15.0"
     s.watchos.deployment_target = "8.0"
@@ -17,5 +17,5 @@ Pod::Spec.new do |s|
     s.requires_arc = true
     s.user_target_xcconfig = { 'GENERATE_INFOPLIST_FILE' => 'YES' }
     s.pod_target_xcconfig = { 'GENERATE_INFOPLIST_FILE' => 'YES' }
-    s.source_files = "JSONSafeEncoding-Swift/Sources/**/*.swift"
+    s.source_files = "SovranSwift/Sources/**/*.swift"
 end

@@ -1,8 +1,8 @@
 #!/bin/sh
 
-echo "--- 🤖 Publishing Analytics-Swift ---"
+echo "--- 🤖 Publishing AnalyticsSwift ---"
 
-FILE="./Analytics-Swift.podspec"
+FILE="./AnalyticsSwift.podspec"
 if [ ! -f "$FILE" ]; then
     echo "❌ $FILE not found!"
     exit 1
@@ -30,4 +30,4 @@ else
     exit 1
 fi
 
-echo "--- 🎉 Analytics-Swift Published ---"
+echo "--- 🎉 AnalyticsSwift Published ---"

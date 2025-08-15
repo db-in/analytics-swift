@@ -6,7 +6,7 @@
 //
 
 import XCTest
-import JSONSafeEncoding_Swift
+import JSONSafeEncodingSwift
 @testable import Segment
 
 struct Personal: Codable {

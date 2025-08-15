@@ -2,7 +2,7 @@
 
 echo "--- 🤖 Publishing JSONSafeEncoding ---"
 
-FILE="./JSONSafeEncoding-Swift.podspec"
+FILE="./JSONSafeEncodingSwift.podspec"
 if [ ! -f "$FILE" ]; then
     echo "❌ $FILE not found!"
     exit 1
