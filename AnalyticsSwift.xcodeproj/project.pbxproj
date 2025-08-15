@@ -40,6 +40,17 @@
 			name = "Publish Sovran";
 			productName = Publishing;
 		};
+		60FDCDCD2E4F45B700288C2C /* Publish Amplitude */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 60FDCDCF2E4F45B700288C2C /* Build configuration list for PBXAggregateTarget "Publish Amplitude" */;
+			buildPhases = (
+				60FDCDCE2E4F45B700288C2C /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "Publish Amplitude";
+			productName = Publishing;
+		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXFileReference section */
@@ -49,14 +60,17 @@
 		60FDCDC92E4F13BD00288C2C /* SegmentAnalyticsSwift.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = SegmentAnalyticsSwift.podspec; sourceTree = "<group>"; };
 		60FDCDCA2E4F13BD00288C2C /* JSONSafeEncodingSwift.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = JSONSafeEncodingSwift.podspec; sourceTree = "<group>"; };
 		60FDCDCB2E4F13BD00288C2C /* SovranSwift.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = SovranSwift.podspec; sourceTree = "<group>"; };
+		60FDCDCC2E4F45AC00288C2C /* SegmentAmplitude.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = SegmentAmplitude.podspec; sourceTree = "<group>"; };
+		60FDCDD22E4F45D400288C2C /* publish_segmentamplitude.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = publish_segmentamplitude.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
-				60FDCDC92E4F13BD00288C2C /* SegmentAnalyticsSwift.podspec */,
 				60FDCDCA2E4F13BD00288C2C /* JSONSafeEncodingSwift.podspec */,
+				60FDCDCC2E4F45AC00288C2C /* SegmentAmplitude.podspec */,
+				60FDCDC92E4F13BD00288C2C /* SegmentAnalyticsSwift.podspec */,
 				60FDCDCB2E4F13BD00288C2C /* SovranSwift.podspec */,
 				60FDCDB72E4E257A00288C2C /* Scripts */,
 			);
@@ -67,6 +81,7 @@
 			children = (
 				60FDCDBB2E4EDBAA00288C2C /* publish_analytics.sh */,
 				60FDCDBC2E4EDBAA00288C2C /* publish_jsonsafeencoding.sh */,
+				60FDCDD22E4F45D400288C2C /* publish_segmentamplitude.sh */,
 				60FDCDBD2E4EDBAA00288C2C /* publish_sovran.sh */,
 			);
 			path = Scripts;
@@ -106,6 +121,7 @@
 				602FA09C29D8709D00924BDC /* Publish Analytics */,
 				60FDCDBE2E4EDBCF00288C2C /* Publish JSONSafeEncoding */,
 				60FDCDC32E4EDBD000288C2C /* Publish Sovran */,
+				60FDCDCD2E4F45B700288C2C /* Publish Amplitude */,
 			);
 		};
 /* End PBXProject section */
@@ -146,6 +162,23 @@
 			shellScript = "\"${PROJECT_DIR}/Scripts/publish_jsonsafeencoding.sh\"\n";
 		};
 		60FDCDC42E4EDBD000288C2C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PROJECT_DIR}/Scripts/publish_sovran.sh\"\n";
+		};
+		60FDCDCE2E4F45B700288C2C /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -312,6 +345,20 @@
 			};
 			name = Release;
 		};
+		60FDCDD02E4F45B700288C2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		60FDCDD12E4F45B700288C2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -347,6 +394,15 @@
 			buildConfigurations = (
 				60FDCDC62E4EDBD000288C2C /* Debug */,
 				60FDCDC72E4EDBD000288C2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60FDCDCF2E4F45B700288C2C /* Build configuration list for PBXAggregateTarget "Publish Amplitude" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60FDCDD02E4F45B700288C2C /* Debug */,
+				60FDCDD12E4F45B700288C2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
