@@ -61,7 +61,7 @@
 		60FDCDCA2E4F13BD00288C2C /* JSONSafeEncodingSwift.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = JSONSafeEncodingSwift.podspec; sourceTree = "<group>"; };
 		60FDCDCB2E4F13BD00288C2C /* SovranSwift.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = SovranSwift.podspec; sourceTree = "<group>"; };
 		60FDCDCC2E4F45AC00288C2C /* SegmentAmplitude.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = SegmentAmplitude.podspec; sourceTree = "<group>"; };
-		60FDCDD22E4F45D400288C2C /* publish_segmentamplitude.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = publish_segmentamplitude.sh; sourceTree = "<group>"; };
+		60FDCDD22E4F45D400288C2C /* publish_amplitude.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = publish_amplitude.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -81,7 +81,7 @@
 			children = (
 				60FDCDBB2E4EDBAA00288C2C /* publish_analytics.sh */,
 				60FDCDBC2E4EDBAA00288C2C /* publish_jsonsafeencoding.sh */,
-				60FDCDD22E4F45D400288C2C /* publish_segmentamplitude.sh */,
+				60FDCDD22E4F45D400288C2C /* publish_amplitude.sh */,
 				60FDCDBD2E4EDBAA00288C2C /* publish_sovran.sh */,
 			);
 			path = Scripts;
@@ -193,7 +193,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PROJECT_DIR}/Scripts/publish_sovran.sh\"\n";
+			shellScript = "\"${PROJECT_DIR}/Scripts/publish_amplitude.sh\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
