@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-    s.name = "JSONSafeEncoding"
+    s.name = "JSONSafeEncoding-Swift"
     s.version = "2.0.0"
     s.summary = "A Swift JSON encoding library that handles edge cases safely"
     s.description = <<-DESC
