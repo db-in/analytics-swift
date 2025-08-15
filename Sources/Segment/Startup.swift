@@ -82,7 +82,7 @@ extension Analytics {
         // do the first one
         checkSettings()
         // set up return-from-background to do it again.
-        NotificationCenter.default.addObserver(forName: NSNotification.Name.UIApplicationWillEnterForeground, object: nil, queue: OperationQueue.main) { [weak self] (notification) in
+        NotificationCenter.default.addObserver(forName: UIApplication.willEnterForegroundNotification, object: nil, queue: OperationQueue.main) { [weak self] (notification) in
             guard let app = notification.object as? UIApplication else { return }
             if app.applicationState == .background {
                 self?.checkSettings()
