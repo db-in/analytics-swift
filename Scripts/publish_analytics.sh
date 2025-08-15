@@ -2,7 +2,7 @@
 
 echo "--- 🤖 Publishing Analytics-Swift ---"
 
-FILE="./AnalyticsSwift.podspec"
+FILE="./Analytics-Swift.podspec"
 if [ ! -f "$FILE" ]; then
     echo "❌ $FILE not found!"
     exit 1
@@ -10,7 +10,7 @@ fi
 
 NAME=$(awk '/\.name =/' "$FILE" | sed 's/.*"\(.*\)"/\1/g')
 VERSION=$(awk '/\.version/' "$FILE" | awk '/[0-9]\.[0-9]\.[0-9]/' | sed 's/.version//g' | sed 's/[^0-9/.]//g')
-TAG="analytics-swift-${VERSION}"
+TAG="analytics-${VERSION}"
 
 echo "- 📝 Name: $NAME"
 echo "- 🔢 Version: $VERSION"

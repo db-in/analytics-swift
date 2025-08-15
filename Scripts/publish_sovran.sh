@@ -2,7 +2,7 @@
 
 echo "--- 🤖 Publishing Sovran ---"
 
-FILE="./Sovran.podspec"
+FILE="./Sovran-Swift.podspec"
 if [ ! -f "$FILE" ]; then
     echo "❌ $FILE not found!"
     exit 1

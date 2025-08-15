@@ -192,9 +192,9 @@ extension SegmentDestination.UploadTaskInfo {
         self.url = url
         self.data = data
         self.task = task
-        
+		
         if let application = UIApplication.safeShared {
-            var taskIdentifier: UIBackgroundTaskIdentifier = UIBackgroundTaskIdentifier.invalid
+			var taskIdentifier: UIBackgroundTaskIdentifier = .invalid
             taskIdentifier = application.beginBackgroundTask {
                 task.cancel()
                 application.endBackgroundTask(taskIdentifier)

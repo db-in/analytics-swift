@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-    s.name = "Sovran"
+    s.name = "Sovran-Swift"
     s.version = "1.1.1"
     s.summary = "A Swift state management library"
     s.description = <<-DESC
@@ -9,10 +9,10 @@ Pod::Spec.new do |s|
     s.license = "MIT"
     s.authors = "Segment, Inc."
     s.source = { :git => 'https://github.com/db-in/analytics-swift.git', :tag => "sovran-#{s.version}", :submodules => true }
-    s.ios.deployment_target = "13.0"
-    s.tvos.deployment_target = "13.0"
-    s.watchos.deployment_target = "7.1"
-    s.macos.deployment_target = "10.15"
+	s.ios.deployment_target = "15.0"
+    s.tvos.deployment_target = "15.0"
+    s.watchos.deployment_target = "8.0"
+    s.macos.deployment_target = "11.0"
     s.requires_arc = true
     s.user_target_xcconfig = { 'GENERATE_INFOPLIST_FILE' => 'YES' }
     s.pod_target_xcconfig = { 'GENERATE_INFOPLIST_FILE' => 'YES' }

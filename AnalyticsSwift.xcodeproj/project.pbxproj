@@ -43,8 +43,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXFileReference section */
-		60FDCDB92E4E4A3D00288C2C /* JSONSafeEncoding.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = JSONSafeEncoding.podspec; sourceTree = "<group>"; };
-		60FDCDBA2E4E4A3D00288C2C /* Sovran.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Sovran.podspec; sourceTree = "<group>"; };
+		60FDCDB92E4E4A3D00288C2C /* JSONSafeEncoding-Swift.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = "JSONSafeEncoding-Swift.podspec"; sourceTree = "<group>"; };
+		60FDCDBA2E4E4A3D00288C2C /* Sovran-Swift.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Sovran-Swift.podspec"; sourceTree = "<group>"; };
 		60FDCDBB2E4EDBAA00288C2C /* publish_analytics.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = publish_analytics.sh; sourceTree = "<group>"; };
 		60FDCDBC2E4EDBAA00288C2C /* publish_jsonsafeencoding.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = publish_jsonsafeencoding.sh; sourceTree = "<group>"; };
 		60FDCDBD2E4EDBAA00288C2C /* publish_sovran.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = publish_sovran.sh; sourceTree = "<group>"; };
@@ -56,8 +56,8 @@
 			isa = PBXGroup;
 			children = (
 				60FDCDC82E4EEBAD00288C2C /* Analytics-Swift.podspec */,
-				60FDCDB92E4E4A3D00288C2C /* JSONSafeEncoding.podspec */,
-				60FDCDBA2E4E4A3D00288C2C /* Sovran.podspec */,
+				60FDCDB92E4E4A3D00288C2C /* JSONSafeEncoding-Swift.podspec */,
+				60FDCDBA2E4E4A3D00288C2C /* Sovran-Swift.podspec */,
 				60FDCDB72E4E257A00288C2C /* Scripts */,
 			);
 			sourceTree = "<group>";
