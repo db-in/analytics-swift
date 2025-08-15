@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import Sovran-Swift
+import Sovran_Swift
 
 
 // MARK: - Main Timeline

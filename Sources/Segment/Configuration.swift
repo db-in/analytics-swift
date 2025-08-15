@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import JSONSafeEncoding-Swift
+import JSONSafeEncoding_Swift
 #if os(Linux) || os(Windows)
 import FoundationNetworking
 #endif

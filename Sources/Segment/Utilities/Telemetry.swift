@@ -1,5 +1,5 @@
 import Foundation
-import Sovran-Swift
+import Sovran_Swift
 #if os(Linux) || os(Windows)
 import FoundationNetworking
 #endif
