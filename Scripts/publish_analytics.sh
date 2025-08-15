@@ -10,7 +10,7 @@ fi
 
 NAME=$(awk '/\.name =/' "$FILE" | sed 's/.*"\(.*\)"/\1/g')
 VERSION=$(awk '/\.version/' "$FILE" | awk '/[0-9]\.[0-9]\.[0-9]/' | sed 's/.version//g' | sed 's/[^0-9/.]//g')
-TAG="${VERSION}"
+TAG="analytics-swift-${VERSION}"
 
 echo "- 📝 Name: $NAME"
 echo "- 🔢 Version: $VERSION"
