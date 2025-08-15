@@ -8,7 +8,7 @@
 #if !os(Linux) && !os(Windows)
 
 import Foundation
-import JSONSafeEncoding
+import JSONSafeEncoding-Swift
 
 @objc(SEGConfiguration)
 public class ObjCConfiguration: NSObject {

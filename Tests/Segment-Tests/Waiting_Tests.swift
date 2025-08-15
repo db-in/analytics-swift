@@ -6,7 +6,7 @@
 //
 
 import XCTest
-import Sovran
+import Sovran-Swift
 @testable import Segment
 
 class ExampleWaitingPlugin: EventPlugin, WaitingPlugin {

@@ -17,8 +17,8 @@ echo "- 🔢 Version: $VERSION"
 echo "- 🏷️  Tag: $TAG"
 
 echo "- 🏷️  Creating tag $TAG..."
-git tag -a -f "${TAG}" -m "Pod $NAME version $VERSION update"
-git push origin -v "refs/tags/${TAG}" || echo "⚠️  Tag push failed (probably already exists) - continuing..."
+git tag -a -f "${TAG}" -m "Pod $NAME version $VERSION update" 2>/dev/null || echo "⚠️  Tag creation failed (probably already exists) - continuing..."
+git push origin -v "refs/tags/${TAG}" 2>/dev/null || echo "⚠️  Tag push failed (probably already exists) - continuing..."
 
 echo "- 📦 Publishing $NAME version $VERSION..."
 pod trunk push "${FILE}" --allow-warnings
