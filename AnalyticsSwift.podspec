@@ -6,13 +6,17 @@ Pod::Spec.new do |s|
     s.license = "MIT"
     s.authors = "Segment, Inc."
 	s.source = { :git => 'https://github.com/db-in/analytics-swift.git', :tag => s.version, :submodules => true }
-    s.ios.deployment_target = "15.0"
+	s.ios.deployment_target = "13.0"
+    s.tvos.deployment_target = "13.0"
+    s.watchos.deployment_target = "7.1"
+    s.macos.deployment_target = "10.15"
     s.requires_arc = true
 	s.user_target_xcconfig = { 'GENERATE_INFOPLIST_FILE' => 'YES' }
 	s.pod_target_xcconfig = { 'GENERATE_INFOPLIST_FILE' => 'YES' }
     s.source_files = 'Sources/**/*.{h,m,swift}'
 	#s.resources = 'Sources/**/*{lproj,xcdatamodeld,storyboard,xib,xcassets,json,strings}'
     s.source_files = "Sources/**/*.swift"
+    s.resources = "Sources/Segment/Resources/*"
     s.dependency 'Sovran'
     s.dependency 'JSONSafeEncoding'
 end

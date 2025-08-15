@@ -102,12 +102,12 @@ public class ObjCTrackEvent: NSObject, ObjCEvent, ObjCRawEvent {
 
     public var context: [String: Any]? {
         get { return _event.context?.dictionaryValue }
-        set(v) { _event.context = try? JSON(nilOrObject: v)}
+        set(v) { _event.context = (try? JSON(nilOrObject: v)) ?? nil}
     }
 
     public var integrations: [String: Any]? {
         get { return _event.context?.dictionaryValue }
-        set(v) { _event.context = try? JSON(nilOrObject: v)}
+        set(v) { _event.context = (try? JSON(nilOrObject: v)) ?? nil}
     }
 
     public var metadata: ObjCDestinationMetadata? {
@@ -126,12 +126,12 @@ public class ObjCTrackEvent: NSObject, ObjCEvent, ObjCRawEvent {
     @objc
     public var properties: [String: Any]? {
         get { return _event.properties?.dictionaryValue }
-        set(v) { _event.properties = try? JSON(nilOrObject: v)}
+        set(v) { _event.properties = (try? JSON(nilOrObject: v)) ?? nil}
     }
 
     @objc
     public init(name: String, properties: [String: Any]? = nil) {
-        _event = TrackEvent(event: name, properties: try? JSON(nilOrObject: properties))
+        _event = TrackEvent(event: name, properties: (try? JSON(nilOrObject: properties)) ?? nil)
     }
 
     internal init(event: EventType) {
@@ -161,12 +161,12 @@ public class ObjCIdentifyEvent: NSObject, ObjCEvent, ObjCRawEvent {
 
     public var context: [String: Any]? {
         get { return _event.context?.dictionaryValue }
-        set(v) { _event.context = try? JSON(nilOrObject: v)}
+        set(v) { _event.context = (try? JSON(nilOrObject: v)) ?? nil}
     }
 
     public var integrations: [String: Any]? {
         get { return _event.context?.dictionaryValue }
-        set(v) { _event.context = try? JSON(nilOrObject: v)}
+        set(v) { _event.context = (try? JSON(nilOrObject: v)) ?? nil}
     }
 
     public var metadata: ObjCDestinationMetadata? {
@@ -179,12 +179,12 @@ public class ObjCIdentifyEvent: NSObject, ObjCEvent, ObjCRawEvent {
     @objc
     public var traits: [String: Any]? {
         get { return _event.traits?.dictionaryValue }
-        set(v) { _event.traits = try? JSON(nilOrObject: v)}
+        set(v) { _event.traits = (try? JSON(nilOrObject: v)) ?? nil}
     }
 
     @objc
     public init(userId: String, traits: [String: Any]? = nil) {
-        _event = IdentifyEvent(userId: userId, traits: try? JSON(nilOrObject: traits))
+        _event = IdentifyEvent(userId: userId, traits: (try? JSON(nilOrObject: traits)) ?? nil)
     }
 
     internal init(event: EventType) {
@@ -214,12 +214,12 @@ public class ObjCScreenEvent: NSObject, ObjCEvent, ObjCRawEvent {
 
     public var context: [String: Any]? {
         get { return _event.context?.dictionaryValue }
-        set(v) { _event.context = try? JSON(nilOrObject: v)}
+        set(v) { _event.context = (try? JSON(nilOrObject: v)) ?? nil}
     }
 
     public var integrations: [String: Any]? {
         get { return _event.context?.dictionaryValue }
-        set(v) { _event.context = try? JSON(nilOrObject: v)}
+        set(v) { _event.context = (try? JSON(nilOrObject: v)) ?? nil}
     }
 
     public var metadata: ObjCDestinationMetadata? {
@@ -244,12 +244,12 @@ public class ObjCScreenEvent: NSObject, ObjCEvent, ObjCRawEvent {
     @objc
     public var properties: [String: Any]? {
         get { return _event.properties?.dictionaryValue }
-        set(v) { _event.properties = try? JSON(nilOrObject: v)}
+        set(v) { _event.properties = (try? JSON(nilOrObject: v)) ?? nil}
     }
 
     @objc
     public init(name: String, category: String?, properties: [String: Any]? = nil) {
-        _event = ScreenEvent(title: name, category: category, properties: try? JSON(nilOrObject: properties))
+        _event = ScreenEvent(title: name, category: category, properties: (try? JSON(nilOrObject: properties)) ?? nil)
     }
 
     internal init(event: EventType) {
@@ -279,12 +279,12 @@ public class ObjCGroupEvent: NSObject, ObjCEvent, ObjCRawEvent {
 
     public var context: [String: Any]? {
         get { return _event.context?.dictionaryValue }
-        set(v) { _event.context = try? JSON(nilOrObject: v)}
+        set(v) { _event.context = (try? JSON(nilOrObject: v)) ?? nil}
     }
 
     public var integrations: [String: Any]? {
         get { return _event.context?.dictionaryValue }
-        set(v) { _event.context = try? JSON(nilOrObject: v)}
+        set(v) { _event.context = (try? JSON(nilOrObject: v)) ?? nil}
     }
 
     public var metadata: ObjCDestinationMetadata? {
@@ -303,12 +303,12 @@ public class ObjCGroupEvent: NSObject, ObjCEvent, ObjCRawEvent {
     @objc
     public var traits: [String: Any]? {
         get { return _event.traits?.dictionaryValue }
-        set(v) { _event.traits = try? JSON(nilOrObject: v)}
+        set(v) { _event.traits = (try? JSON(nilOrObject: v)) ?? nil}
     }
 
     @objc
     public init(groupId: String?, traits: [String: Any]? = nil) {
-        _event = GroupEvent(groupId: groupId, traits: try? JSON(nilOrObject: traits))
+        _event = GroupEvent(groupId: groupId, traits: (try? JSON(nilOrObject: traits)) ?? nil)
     }
 
     internal init(event: EventType) {
@@ -338,12 +338,12 @@ public class ObjCAliasEvent: NSObject, ObjCEvent, ObjCRawEvent {
 
     public var context: [String: Any]? {
         get { return _event.context?.dictionaryValue }
-        set(v) { _event.context = try? JSON(nilOrObject: v)}
+        set(v) { _event.context = (try? JSON(nilOrObject: v)) ?? nil}
     }
 
     public var integrations: [String: Any]? {
         get { return _event.context?.dictionaryValue }
-        set(v) { _event.context = try? JSON(nilOrObject: v)}
+        set(v) { _event.context = (try? JSON(nilOrObject: v)) ?? nil}
     }
 
     public var metadata: ObjCDestinationMetadata? {
