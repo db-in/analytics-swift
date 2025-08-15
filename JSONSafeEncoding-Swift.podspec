@@ -9,10 +9,10 @@ Pod::Spec.new do |s|
     s.license = "MIT"
     s.authors = "Segment, Inc."
     s.source = { :git => 'https://github.com/db-in/analytics-swift.git', :tag => "jsonsafeencoding-#{s.version}", :submodules => true }
-    	s.ios.deployment_target = "15.0"
-    s.tvos.deployment_target = "15.0"
+	s.ios.deployment_target = "15.0"
     s.watchos.deployment_target = "8.0"
     s.macos.deployment_target = "11.0"
+	s.swift_versions = ["5.5", "5.7", "5.8", "5.9"]
     s.requires_arc = true
     s.user_target_xcconfig = { 'GENERATE_INFOPLIST_FILE' => 'YES' }
     s.pod_target_xcconfig = { 'GENERATE_INFOPLIST_FILE' => 'YES' }
