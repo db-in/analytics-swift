@@ -1,13 +1,12 @@
 Pod::Spec.new do |s|
     s.name = "Analytics-Swift"
     s.version = "1.8.0"
-    s.summary = "The hassle-free way to add Segment analytics to your Swift app (iOS/tvOS/watchOS/macOS/Linux)."
+    s.summary = "The hassle-free way to add Segment analytics to your Swift app (iOS/macOS)."
     s.homepage = "https://github.com/segmentio/analytics-swift"
     s.license = "MIT"
     s.authors = "Segment, Inc."
 	s.source = { :git => 'https://github.com/db-in/analytics-swift.git', :tag => "analytics-#{s.version}", :submodules => true }
 	s.ios.deployment_target = "15.0"
-    s.watchos.deployment_target = "8.0"
     s.macos.deployment_target = "11.0"
     s.swift_versions = ["5.5", "5.7", "5.8", "5.9"]
     s.requires_arc = true
