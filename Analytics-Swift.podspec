@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
 	s.ios.deployment_target = "15.0"
     s.tvos.deployment_target = "15.0"
     s.watchos.deployment_target = "8.0"
-    s.macos.deployment_target = "10.0"
+    s.macos.deployment_target = "10.15"
     s.swift_versions = ["5.5", "5.7", "5.8", "5.9"]
     s.requires_arc = true
 	s.user_target_xcconfig = { 'GENERATE_INFOPLIST_FILE' => 'YES' }
