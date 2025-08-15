@@ -46,7 +46,7 @@
 		60FDCDBB2E4EDBAA00288C2C /* publish_analytics.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = publish_analytics.sh; sourceTree = "<group>"; };
 		60FDCDBC2E4EDBAA00288C2C /* publish_jsonsafeencoding.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = publish_jsonsafeencoding.sh; sourceTree = "<group>"; };
 		60FDCDBD2E4EDBAA00288C2C /* publish_sovran.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = publish_sovran.sh; sourceTree = "<group>"; };
-		60FDCDC92E4F13BD00288C2C /* AnalyticsSwift.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = AnalyticsSwift.podspec; sourceTree = "<group>"; };
+		60FDCDC92E4F13BD00288C2C /* SegmentAnalyticsSwift.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = SegmentAnalyticsSwift.podspec; sourceTree = "<group>"; };
 		60FDCDCA2E4F13BD00288C2C /* JSONSafeEncodingSwift.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = JSONSafeEncodingSwift.podspec; sourceTree = "<group>"; };
 		60FDCDCB2E4F13BD00288C2C /* SovranSwift.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = SovranSwift.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -55,7 +55,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
-				60FDCDC92E4F13BD00288C2C /* AnalyticsSwift.podspec */,
+				60FDCDC92E4F13BD00288C2C /* SegmentAnalyticsSwift.podspec */,
 				60FDCDCA2E4F13BD00288C2C /* JSONSafeEncodingSwift.podspec */,
 				60FDCDCB2E4F13BD00288C2C /* SovranSwift.podspec */,
 				60FDCDB72E4E257A00288C2C /* Scripts */,

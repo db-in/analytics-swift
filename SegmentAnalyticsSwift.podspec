@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-    s.name = "AnalyticsSwift"
+    s.name = "SegmentAnalyticsSwift"
     s.version = "1.8.0"
     s.summary = "The hassle-free way to add Segment analytics to your Swift app (iOS/macOS)."
     s.homepage = "https://github.com/segmentio/analytics-swift"
