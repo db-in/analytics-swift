@@ -12,8 +12,8 @@ Pod::Spec.new do |s|
     s.macos.deployment_target = "10.15"
     s.swift_versions = ["5.5", "5.7", "5.8", "5.9"]
     s.requires_arc = true
-	s.user_target_xcconfig = { 'GENERATE_INFOPLIST_FILE' => 'YES' }
-	s.pod_target_xcconfig = { 'GENERATE_INFOPLIST_FILE' => 'YES' }
+	s.user_target_xcconfig = { 'GENERATE_INFOPLIST_FILE' => 'YES', 'MARKETING_VERSION' => "#{s.version}" }
+	s.pod_target_xcconfig = { 'GENERATE_INFOPLIST_FILE' => 'YES', 'MARKETING_VERSION' => "#{s.version}" }
     s.source_files = 'Sources/**/*.{h,m,swift}'
     s.source_files = "Sources/**/*.swift"
     s.resources = "Sources/Segment/Resources/*"

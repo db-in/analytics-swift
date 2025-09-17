@@ -13,8 +13,8 @@ Pod::Spec.new do |s|
     s.tvos.deployment_target = "15.0"
 	s.swift_versions = ["5.5", "5.7", "5.8", "5.9"]
     s.requires_arc = true
-    s.user_target_xcconfig = { 'GENERATE_INFOPLIST_FILE' => 'YES' }
-    s.pod_target_xcconfig = { 'GENERATE_INFOPLIST_FILE' => 'YES' }
+    s.user_target_xcconfig = { 'GENERATE_INFOPLIST_FILE' => 'YES', 'MARKETING_VERSION' => "#{s.version}" }
+    s.pod_target_xcconfig = { 'GENERATE_INFOPLIST_FILE' => 'YES', 'MARKETING_VERSION' => "#{s.version}" }
     s.source_files = "SegmentAmplitude/Sources/**/*.swift"
     s.resources = "SegmentAmplitude/Sources/SegmentAmplitude/Resources/*"
     s.dependency 'SegmentAnalyticsSwift'
