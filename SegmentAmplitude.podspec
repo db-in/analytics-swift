@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name = "SegmentAmplitude"
-    s.version = "1.4.3"
+    s.version = "1.4.4"
     s.summary = "Amplitude destination for Segment Analytics Swift"
     s.description = <<-DESC
                      SegmentAmplitude provides Amplitude session tracking and analytics functionality for Segment Analytics Swift applications.

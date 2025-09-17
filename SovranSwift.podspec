@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name = "SovranSwift"
-    s.version = "1.1.2"
+    s.version = "1.1.3"
     s.summary = "A Swift state management library"
     s.description = <<-DESC
                      Sovran is a Swift state management library that provides a simple and efficient way to manage state in your Swift applications.
